@@ -25,7 +25,8 @@ apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 28
+    namespace 'flutter.plugins.screen.screenexample'
+    compileSdkVersion 34
 
     lintOptions {
         disable 'InvalidPackage'
@@ -33,8 +34,8 @@ android {
 
     defaultConfig {
         applicationId "flutter.plugins.screen.screenexample"
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 34
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
